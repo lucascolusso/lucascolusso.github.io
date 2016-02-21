@@ -68,6 +68,31 @@ figure.limit img { max-width: 25rem; margin-left: auto; margin-right: auto; }
 Type
 ******************/
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 a { color: #2980b9; }
 a:hover { color: crimson; }
 p a { text-decoration: none; border-bottom: 1px solid #2980b9; }
@@ -365,6 +390,25 @@ Media Queries
   border-bottom-left-radius: 5px;
 }
 
+.btn-floating-back{
+  cursor: pointer;
+  border: 2px solid #2980b9;
+  background-color: white;
+  padding: 10px;
+  line-height: 14px;
+  border-radius: 5px;
+  display: inline;
+}
+
+.fixed-action-btn a{
+  text-decoration: none;
+}
+
+.fixed-back-btn a{
+  text-decoration: none;
+}
+
+
 .chatbox{
   text-align: center;
   height:25px;
@@ -375,4 +419,13 @@ Media Queries
   border-radius: 50px;
   color: white;
   font-weight: bold;
+}
+
+.fixed-back-btn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  z-index: 999;
+  font-size: 12px;
 }
