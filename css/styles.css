@@ -397,7 +397,8 @@ Media Queries
   padding: 10px;
   line-height: 14px;
   border-radius: 5px;
-  display: inline;
+display: table;
+
 }
 
 .fixed-action-btn a{
@@ -408,6 +409,10 @@ Media Queries
   text-decoration: none;
 }
 
+#fix{
+  display: table-cell;
+   vertical-align: middle;
+}
 
 .chatbox{
   text-align: center;
