@@ -68,9 +68,9 @@ figure.limit img { max-width: 25rem; margin-left: auto; margin-right: auto; }
 Type
 ******************/
 
-a { color: gray; }
+a { color: #2980b9; }
 a:hover { color: crimson; }
-p a { text-decoration: none; border-bottom: 1px solid #bbb; }
+p a { text-decoration: none; border-bottom: 1px solid #2980b9; }
 p a:hover { border-bottom-color: crimson; }
 
 b.label { display: block; font-weight: normal; color: #333; }
@@ -122,7 +122,7 @@ a.name { font-weight: 500; color: #222; font-size: 16px; }
 
 /* change header to black on custom pages */
 body.custom a.name { color: #fff; }
-body.custom header { background-color: #151515; border-bottom: none; margin-bottom: 0; }
+body.custom header { background-color: #151515; margin-bottom: 0; }
 body.custom header a.active { color: #fff; border-bottom: 2px solid #aaa; }
 body.custom header h1 { color: #fff; }
 body.custom svg.monogram { fill: #fff; }
@@ -303,7 +303,7 @@ ul.tablelist li a {
 Media Queries
 ******************/
 @media (min-width: 500px) {
-    header { margin-bottom: 0; padding: 2rem; border-bottom: none; }
+    header { margin-bottom: 0; padding: 2rem; }
     header .navwrapper{ text-align: center; }
     .grid {
         display: -webkit-box;
@@ -370,3 +370,11 @@ Media Queries
 @media (min-width: 500px) { body.library section a { width: 33.3333%; } }
 @media (min-width: 700px) { body.library section a { width: 25%; } }
 @media (min-width: 900px) { body.library section a { width: 20%; } }
+
+
+#fixed-action-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
