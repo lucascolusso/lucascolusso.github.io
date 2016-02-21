@@ -372,9 +372,35 @@ Media Queries
 @media (min-width: 900px) { body.library section a { width: 20%; } }
 
 
-#fixed-action-btn{
+.fixed-action-btn{
   position: fixed;
   right: 20px;
   bottom: 20px;
+  width: 100px;
   z-index: 999;
+  font-size: 12px;
+}
+
+.btn-floating{
+  cursor: pointer;
+  border: 2px solid #2980b9;
+  background-color: white;
+  padding: 10px;
+  line-height: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+}
+
+.chatbox{
+  text-align: center;
+  height:25px;
+  width:25px;
+  float:right;
+  margin-top: 5px;
+  background-color: #2980b9;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
 }
