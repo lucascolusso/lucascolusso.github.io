@@ -150,34 +150,6 @@ footer div.copyline {
     margin-top: 2em;
     font-size: 12px;
 }
-#mc_embed_signup:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
-#mc_embed_signup form { margin: 0; padding: 0 !important; }
-#mc_embed_signup form input {
-    display: inline-block !important;
-    line-height: 1;
-    font-size: 13px;
-    border: none;
-    padding: 7px 3px !important;
-    border-radius: 3px;
-}
-#mc_embed_signup form input.email { margin: 1em 0 0 0; width: 200px; background-color: #fff;}
-#mc_embed_signup form input[type='submit'] {
-    line-height: 1;
-    background-color: transparent;
-    color: #333;
-    padding: 9px 10px !important;
-}
-
-@media (min-width: 700px) {
-    footer .title { float: left; }
-    #mc_embed_signup form input.email { margin-top: 0.3em; }
-    #mc_embed_signup form { float: right; }
-}
 
 /*****************
 Library
