@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <meta content="Lucas Colusso" name="description">
+
+    <title>Lucas Colusso</title>
+
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/print.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="writingindex" data-gr-c-s-loaded="true">
+    <header>
+      <div class="navwrapper">
+        <a href="#" class="name">
+          Log transformation approach
+        </a>
+      </div>
+    </header>
+    <div class="writingwrapper">
+      <div class="gridbig">
+        <div>
+          <img src="log.png" class="fullimg">
+        </div>
+        <div>
+      <div>
+        <pre>
+          <code class="snippet">
+skewed: function() {
+    if (score ==1) {
+      graphScore = targetScore*Math.log(2)/Math.log(targetScore)/2;
+    } else {
+      graphScore = targetScore*Math.log(score)/Math.log(targetScore);
+    };
+    $('#feedback-chart-panel').highcharts({
+      title:{ text:'' },
+      chart: { type: 'column' },
+      legend: { enabled: false },
+      credits: { enabled: false },
+      xAxis: { categories: ['Your score', leaderBarName] },
+      yAxis: { min: 0, title: { text: 'Score' }, gridLineWidth: 0, minorGridLineWidth: 0, labels: { enabled: false } },
+      plotOptions: {
+      series: {
+          animation: false
+          }
+      },
+      series: [{
+        name: 'Score', colorByPoint: true,
+        data: [
+        {
+          name: score.toString(), color: userBarColor, y: graphScore, // log calculus
+          dataLabels: {
+            enabled: true, style: { fontSize: '13px' },
+            formatter: function() { return score; }
+          }
+        },
+        {
+          name: targetScore, color: leaderBarColor, y: targetScore,
+          dataLabels: {
+            enabled: true, style: { fontSize: '13px' },
+            formatter: function() { return targetScore; }
+          }
+        }],
+        tooltip: { headerFormat: '{series.name}: &lt;b>{point.key}&lt;/b>', pointFormat: '' }
+      }]
+    });
+                </code>
+                </pre>
+            </div>
+          </div>
+        </div>
+            <div class="fixed-back-btn">
+              <a href="https://lucascolusso.github.io/portfolio/">
+                <div class="btn-floating-back">
+                  <i class="material-icons" id="fix">keyboard_backspace</i>
+                  <span id="fix"> Lucas Colusso's website</span>
+                </div>
+              </a>
+            </div>
+        </div>
+      	<footer>
+      		<section class="footersection">
+        		<div>
+        			Copyright © 2016 Lucas Colusso · <a href="mailto:contact@lucascolusso.com">contact@lucascolusso.com</a>
+        		</div>
+      		</section>
+      	</footer>
+    </body>
+</html>
