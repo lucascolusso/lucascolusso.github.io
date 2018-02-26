@@ -61,7 +61,8 @@ a:hover { color: crimson; }
   float: right;
   width: 25px;
 }
-img:hover { opacity: 0.5;
+
+#email:hover { opacity: 0.5;
 }
 
 .name{
