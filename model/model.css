@@ -1,0 +1,14 @@
+.links line {
+  stroke: black;
+  stroke-width: 5px;
+}
+
+.nodes circle {
+  stroke: black;
+  stroke-width: 5px;
+}
+
+.labels circle {
+  font-size: 16px;
+  font-family: arial;
+}

@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {"id": "field", "group": 1, "label": "field"},
+    {"id": "applied", "group": 7, "label": "applied"},
+    {"id": "basic", "group": 19, "label": "basic"},
+    {"id": "design", "group": 83, "label": "design"}
+  ],
+  "links": [
+    {"source": "design", "target": "basic", "value": 1},
+    {"source": "design", "target": "applied", "value": 1},
+    {"source": "design", "target": "field", "value": 1},
+
+    {"source": "basic", "target": "applied", "value": 1},
+    {"source": "applied", "target": "field", "value": 1},
+    {"source": "field", "target": "basic", "value": 1},
+
+    {"source": "design", "target": "basic", "value": 1},
+    {"source": "design", "target": "applied", "value": 1}
+  ]
+}
