@@ -37,9 +37,45 @@
     z-index: 105;
   }
 
-  .header-logo{
+.header-logo{
     font: normal 28px "Rubik",sans-serif;
     width: 100%;
     float: left;
     padding: 10px;
   }
+
+.one-column {
+  padding: 40px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.content{
+  margin-top: 100px;
+}
+
+.float{
+  z-index: 10;
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+
+.position{
+  position:relative;
+}
+
+.wrap-header{
+  height: 70px;
+}
+
+.right{
+  margin: 15px;
+  float:right;
+  vertical-align: middle;
+}
+
+.link{
+  font-weight: bold;
+}
