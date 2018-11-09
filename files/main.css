@@ -138,6 +138,17 @@ li{
   padding-bottom: 10px;
     padding-left:0px;
       margin-left:0px;
+      color:white!important;
+}
+
+.teaser-title{
+  font-family: "Rubik";
+  font-size:21px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    padding-left:0px;
+      margin-left:0px;
 }
 
 .content{
@@ -148,12 +159,14 @@ li{
 }
 
 .hero{
-  border: 5px solid black;
-  margin-top: 20px;
+  background-color: black!important;
+  margin-top: 0px;
   margin-bottom: 40px;
   padding: 20px;
-  background: url("../img/mylo.png") no-repeat right;
-  height: 200px;
+  background: url("../img/mylo_hero.png") no-repeat;
+  background-position: 80% 40%;
+  background-size: 20%;
+  height: 400px;
 }
 
 a{
